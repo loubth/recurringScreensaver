@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arkadia Zoomquilt – An infinitely zooming floral botanical painting</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="arkadia, painting, Sophia Schomberg, Nikolaus Baumgarten, zoomquilt, infinite zoom, infinity, recursion, recursive art, botanical, garden, forest, ocean, underwater, secret garden, paradise, hortus conclusus, lush, psychedelic, trippy">
+	<meta name="description" content="An infinitely zooming floral botanical painting. Created by Nikolaus Baumgarten and Sophia Schomberg">
+	<meta property="og:title" content="Arkadia Zoomquilt" />
+	<meta property="og:description" content="Infinitely zooming botanical floral painting.">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://arkadia.xyz" />
+	<meta property="og:image" content="https://arkadia.xyz/arkadia.jpg">
+	<link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+	<link rel="manifest" href="ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Arkadia">
+	<meta name="application-name" content="arkadia">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" media="all" href="zoom.css?v=21" />
+</head>
+<body class="loading">
+	<div id="nav">
+	
+		<div class="seekbar">
+			<div class="seekbar-visible">
+				<div class="marker filtered"></div>
+			</div>
+		</div>
+		<canvas id="preview" class="filtered" width="0" height="0"></canvas>
+	</div>
+	<div id="loading">
+		<img src="uiimg/logo.png" id="logo" class="filtered">
+		<div id='status' class="filtered">
+			<div id='loadbar'></div>
+		</div>
+	</div>
+	<div id="credits">
+		<div class="creditsinner">
+
+			<section class="upper">
+				<img src="uiimg/logo.png" alt="Arkadia" class="logo filtered">
+				<p class="selectable filtered">
+				Created by
+				<a href="http://nikkki.net" target="_blank">Nikolaus Baumgarten</a><a class="insta" target="_blank" href="https://www.instagram.com/nikolausbaumgarten/"></a><a class="twitter" target="_blank" href="https://twitter.com/nikbaumg/"></a><br>
+				and <a href="http://sophiaschomberg.de" target="_blank">Sophia Schomberg</a><a class="insta" target="_blank" href="https://www.instagram.com/sophiasc4/"></a><br>
+				<p class="selectable">
+					2015
+				</p>
+				<p class="selectable filtered">
+					<a href="/cdn-cgi/l/email-protection#234b464f4f4c6342514842474a420d5b5a59"><span class="__cf_email__" data-cfemail="5c34393030331c3d2e373d38353d72242526">[email&#160;protected]</span></a> &bull; <a href="https://www.youtube.com/watch?v=zowLNSKyfI0">Arkadia on YouTube</a>
+				</p>
+
+				<div id="speedcontrol">
+					<img src="uiimg/speed.svg">
+					<div class="handle"></div>
+				</div>
+
+				<div class="buttonrow">
+					
+				<div class="settings filtered">
+						<div class="textbutton fx" alt="unfiltered" id="nofx">original</div>
+						<div class="textbutton fx" alt="color" id="trippy">colors</div>
+						<div class="textbutton fx" alt="sw" id="sw">grey</div>
+				</div>
+
+				<div id="fullscreen">Fullscreen</div>
+
+				</div>
+
+				<p class="links selectable filtered">
+					<a href="https://play.google.com/store/apps/details?id=org.zoomquilt.zoomapp&referrer=utm_source%3Darkadiaxy">
+						<span class="apptext">Get the Live Wallpaper for Android</span><br>
+							<img class="playbadge" src="uiimg/google-play-badge.png">
+					</a>
+					<a href="https://infiniteflowers.net">
+						<span>Infinite Flowers</span>
+						<img src="uiimg/flowers2.jpg" alt="">
+					</a><br>					
+					<a href="http://hydromeda.org">
+						<span>Hydromeda</span>
+						<img src="uiimg/hydro2.jpg" alt="">
+					</a>
+				</p>
+				<p>
+					<a href="http://zoomquilt.org">
+						<span class="filtered">The first Zoomquilt</span>
+					</a>
+					&bull;
+					<a href="http://zoomquilt2.com">
+						<span class="filtered">Zoomquilt 2</span>
+					</a>
+				</p>
+
+			</section>
+			<section class="lower">
+				<a href="impressum.html" class="imprint">Privacy Policy & Legal Notice</a><br>
+			</section>
+		</div>
+		<div class="close"></div>
+	</div>
+
+ 	<canvas id="zc" class="filtered" width="0" height="0">Your need a Browser with Canvas support to view Arkadia</canvas>
+	
+	<!-- <script src="js/jquery-1.9.0.min.js"></script> -->
+	<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="zoom.js?v=28" type="text/javascript"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7ea5bf68ceee4963","version":"2023.4.0","r":1,"token":"fad63eda56424a18a7e1efa34bd3f25c","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
